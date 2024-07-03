@@ -34,12 +34,13 @@ Discoteca.procesarRumbera(Rumbero2);
 Discoteca.procesarRumbera(Rumbero3);
 Discoteca.procesarRumbera(Rumbero4);
 
-let salida = document.getElementById("salida");
+let salida = document.getElementById("Salida");
 salida.innerHTML= "Resultado:"
 salida.innerHTML+= "<br> Pago que realiza Luis: " +Rumbero1.calcularPago() +"$";
 salida.innerHTML+= "<br> Pago que realiza Ana: " +Rumbero2.calcularPago() +"$";
 salida.innerHTML+= "<br> Pago que realiza José: " +Rumbero3.calcularPago() +"$";
 salida.innerHTML+= "<br> Pago que realiza Carmen: " +Rumbero4.calcularPago() +"$";
 salida.innerHTML+= "<br> <br>";
-salida.innerHTML+= "<br> Total Ganado: " +Discoteca.devolveracumTotal() +"$";
+salida.innerHTML+= "<br> Total Ganado: " +Discoteca.devolverAcumTotal() +"$";
 salida.innerHTML+= "<br> Porcentaje de rumberas mayores a 21 años: " +Discoteca.calcularPorcentaje() +"%";
+salida.innerHTML+= "<br> El sexo que más asistió a la discoteca es: " +Discoteca.devolverAuxNombre();
